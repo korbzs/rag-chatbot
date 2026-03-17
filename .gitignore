@@ -1,3 +1,13 @@
+# chat_history/*
+# chat_history/
+# logs/*
+# logs/
+# chroma_db/*
+# chroma_db/
+
+# A 'chroma_db/' és 'documents/' mappák szándékosan vannak kikommentelve.
+# Gyors tesztelhetőség miatt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
