@@ -45,7 +45,7 @@ def guardrail_node(state: dict) -> dict:
     try:
         llm = ModelFactory.get_primary(streaming=False)
     except:
-        ll = ModelFactory.get_fallback(streaming=False)
+        llm = ModelFactory.get_fallback(streaming=False)
 
     llm_structured = llm.with_structured_output(GuardrailDecision)
     

@@ -31,7 +31,7 @@ def after_retriever(state: GraphState):
 
 def decide_to_generate(state: GraphState):
     if state.get("web_search_needed", False):
-        if state.get("retry_count", 0) >= 1:
+        if state.get("retry_count", 0) >= 3:
             return "generate"
         return "rewriter"
     return "generate"
